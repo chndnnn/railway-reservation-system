@@ -20,6 +20,9 @@ backend/target/
 hs_err_pid*
 replay_pid*
 
+# Spring Boot configuration (local)
+backend/src/main/resources/application.properties
+
 # IntelliJ / Eclipse / VS Code
 .idea/
 *.iml
