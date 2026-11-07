@@ -1,0 +1,180 @@
+.confirm-page {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.confirm-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.1);
+  padding: 40px 36px;
+  text-align: center;
+}
+
+.confirm-icon {
+  font-size: 3rem;
+  margin-bottom: 12px;
+}
+
+.confirm-card h1 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 0 0 20px;
+}
+
+.pnr-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+.pnr {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1a56db;
+  letter-spacing: 2px;
+  margin: 4px 0 24px;
+}
+
+.confirm-details {
+  background: #f9fafb;
+  border-radius: 10px;
+  padding: 16px 20px;
+  text-align: left;
+  margin-bottom: 24px;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 0.92rem;
+}
+
+.detail-row:last-child {
+  border-bottom: none;
+}
+
+.detail-row span:first-child {
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.detail-row span:last-child {
+  color: #111827;
+  font-weight: 600;
+}
+
+.passenger-section {
+  text-align: left;
+  margin-bottom: 24px;
+}
+
+.passenger-section h3 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #374151;
+  margin: 0 0 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.passenger-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+}
+
+.passenger-table th {
+  background: #f3f4f6;
+  padding: 8px 12px;
+  text-align: left;
+  font-weight: 600;
+  color: #374151;
+}
+
+.passenger-table td {
+  padding: 8px 12px;
+  border-bottom: 1px solid #f3f4f6;
+  color: #111827;
+}
+
+.total-fare {
+  font-size: 1.1rem;
+  color: #374151;
+  margin-bottom: 28px;
+}
+
+.total-fare strong {
+  font-size: 1.4rem;
+  color: #111827;
+}
+
+.confirm-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.action-btn {
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: none;
+}
+
+.action-btn.primary {
+  background: #1a56db;
+  color: #fff;
+}
+
+.action-btn.primary:hover { background: #1e40af; }
+
+.action-btn.secondary {
+  background: #f3f4f6;
+  color: #374151;
+  border: 1.5px solid #d1d5db;
+}
+
+.action-btn.secondary:hover { background: #e5e7eb; }
+
+@media (max-width: 600px) {
+  .confirm-page {
+    padding: 20px 12px;
+  }
+  .confirm-card {
+    padding: 24px 16px;
+    border-radius: 12px;
+  }
+  .confirm-card h1 {
+    font-size: 1.3rem;
+  }
+  .pnr {
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    word-break: break-all;
+  }
+  .passenger-section {
+    overflow-x: auto;
+  }
+  .passenger-table {
+    min-width: 380px;
+  }
+  .confirm-actions {
+    flex-direction: column;
+  }
+  .action-btn {
+    width: 100%;
+    min-height: 48px;
+  }
+}
